@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingRight="20dp"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="15dp"
+            android:paddingLeft="15dp"
+            android:paddingBottom="15dp"
+            android:paddingRight="80dp"
+            android:text="Cylinders"
+            android:textSize="20dp" />
+
+        <EditText
+            android:text="0"
+            android:id="@+id/edittext_cylinders"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="15dp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="15dp"
+            android:paddingLeft="15dp"
+            android:paddingBottom="15dp"
+            android:paddingRight="40dp"
+            android:text="Displacement"
+            android:textSize="20dp" />
+
+        <EditText
+            android:text="0"
+            android:id="@+id/edittext_displacement"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingLeft="15dp"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="15dp"
+            android:paddingLeft="15dp"
+            android:paddingBottom="15dp"
+            android:paddingRight="54dp"
+            android:text="Horsepower"
+            android:textSize="20dp" />
+
+        <EditText
+            android:text="0"
+            android:id="@+id/edittext_horsepower"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="15dp"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="15dp"
+            android:paddingLeft="15dp"
+            android:paddingBottom="15dp"
+            android:paddingRight="100dp"
+            android:text="Weight"
+            android:textSize="20dp" />
+
+        <EditText
+            android:text="0"
+            android:id="@+id/edittext_weight"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="15dp"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="15dp"
+            android:paddingLeft="15dp"
+            android:paddingBottom="15dp"
+            android:paddingRight="50dp"
+            android:text="Acceleration"
+            android:textSize="20dp" />
+
+        <EditText
+            android:text="0"
+            android:id="@+id/edittext_acceleration"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="15dp"
+            />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="15dp"
+            android:paddingLeft="15dp"
+            android:paddingBottom="15dp"
+            android:paddingRight="61dp"
+            android:text="Model Year"
+            android:textSize="20dp" />
+
+        <EditText
+            android:text="0"
+            android:id="@+id/edittext_modelyear"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="15dp"
+            />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="15dp"
+            android:paddingLeft="15dp"
+            android:paddingBottom="15dp"
+            android:paddingRight="110dp"
+            android:text="Origin"
+            android:textSize="20dp" />
+
+        <RadioGroup
+            android:id="@+id/radioGroupOrigin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <RadioButton
+                android:text="Europe"
+                android:id="@+id/rb_europe"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"/>
+            <RadioButton
+                android:text="Japan"
+                android:id="@+id/rb_japan"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"/>
+            <RadioButton
+                android:text="USA"
+                android:id="@+id/rb_usa"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"/>
+        </RadioGroup>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="20dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/button_predict"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Predict"
+            android:textSize="15dp"
+            android:layout_marginLeft="153dp"/>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="15dp"
+            android:paddingLeft="15dp"
+            android:paddingBottom="15dp"
+            android:paddingRight="91dp"
+            android:text="Result"
+            android:textSize="20dp" />
+
+        <EditText
+            android:id="@+id/result"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            />
+    </LinearLayout>
+
+</TableLayout>
